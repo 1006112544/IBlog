@@ -23,6 +23,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^blog/', index),
+    url(r'^login/', login),
     url(r'^article/(\d+)', article),
     url(r'^', index),  # 根页面
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
